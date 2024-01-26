@@ -1,0 +1,409 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+}
+
+body{
+    background-image: linear-gradient( #370C94 , #160044);
+}
+
+.flex{
+    display:flex;
+}
+
+.flexc{
+    display:flex;
+    flex-direction: column;
+}
+
+:root{
+    --color-head: #F2F4F8;
+    --color-sub : #ffffffe5;
+    --color-wbtntext : #0B081C;
+    --color-faint:rgb(73, 73, 73);
+    --color-blackish : rgb(10, 10, 10);
+    --bgcolor:#370C94;
+    --bg-transparent : transparent;
+}
+
+.d-btn{
+    background:var(--color-head);
+    color: var(--color-wbtntext);
+    box-shadow: 2px 2px 8px inset rgb(88, 88, 88);
+    padding:9px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    border:none;
+    transition: 1s ease;
+    font-size: 16px;
+}
+
+.t-btn{
+    background-color:transparent;
+    box-shadow: 2px 2px 8px inset rgb(88, 88, 88),
+    -2px -2px 8px rgb(23, 19, 48);
+    color: var(--color-head);
+    padding:10px 18px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    /* border: 1px solid var(--color-head); */
+    transition: 1s ease;
+    font-size: 16px;
+}
+
+.d-btn:hover {
+    color:white;
+    background-color:transparent;
+    box-shadow: 2px 2px 8px inset rgb(88, 88, 88);;
+}
+
+.t-btn:hover{
+    color:black;
+    background-color: white;
+    box-shadow: 2px 2px 8px inset rgb(82, 82, 82);;
+}
+
+/* ------------------ nav bar starts here ----------------------- */
+
+.nav{
+    display: flex;
+    background: rgb(15, 15, 15);
+    justify-content: space-between;
+    align-items: center;
+    width:100vw;
+    height: 5rem;
+    position:fixed;
+    z-index: 999;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.logoicon{
+    display: flex;
+    align-items: center;
+}
+
+.logoicon img{
+    width: 23px;
+}
+
+.logotext a{
+    color:var(--color-head);
+    font-size: 21px;
+    align-self: center;
+    margin-left: 6px;
+}
+
+.navsub1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55vw;
+    margin-right: 50px;
+    font-size: 15px;
+}
+
+.navsub1 li a{
+    color:var(--color-head);
+}
+
+@media screen and (max-width:1023px){
+    .hidden{
+        display:none;
+    }
+
+    .t-btn , .d-btn{
+        font-size: 15px;
+    }
+}
+
+/* ---------------------- .background-img ------------- */
+
+.background-img{
+    display:flex;
+    position: absolute;
+    z-index: 777;   
+    width:600px;
+    height:268px;
+    left:50%;
+    top:10%;
+    transform:translate(-50%,-50%);
+}
+
+.colort{
+   opacity:0.8;
+   z-index:777;
+}
+
+/* ----------------------- maincontainer first start here  ------------------------ */
+
+.maincontainer{
+    width: 100vw;
+    /* background-color: var(--bgcolor); */
+    background-image: radial-gradient(#370C94 , #0B0121);
+    position: absolute;
+}
+
+.firstContainer{
+    color:var(--color-sub);
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0px;
+    background-image: radial-gradient( rgb(10,1,31) , rgb(20,12,50));
+}
+
+.text1-headsub{
+    border: 1px solid var(--color-head);
+    padding:8px 20px;
+    border-radius: 20px;
+    position:absolute;
+    top:5%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:777;
+}
+
+
+.text2-heading{
+    font-size: 30px;
+    width:700px;
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(192, 181, 207));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtext{
+    width:520px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    font-size: 18px;
+}
+
+.button-space{
+    gap:20px;
+}
+
+.extrabtn{
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 50px;;
+}
+
+.imgbox1{
+    display:flex;
+    flex-wrap: nowrap;
+    width:70vw;
+}
+
+.firstContainer-img{
+    width:100%;
+    height:100%;
+}
+
+
+/* -------------- secondContaienr ------------------------------- */
+
+.secondContainer{
+    width:100vw;
+    align-items: center;
+    background-image: radial-gradient( rgb(10,1,31) , rgb(20,12,50));
+}
+
+.secondHead{
+    color:var(--color-head);
+    align-items: center;
+    justify-content: center;
+}
+
+.secondHead h1{
+    font-size:35px;
+    width:300px;
+    text-align: center;
+}
+
+.secondHead h4{
+    width:500px;
+    font-size:18px;
+    font-weight: 100;
+    color:var(--color-sub)
+}
+
+.boxesContainer{
+    width:100%;
+    /* background-color: red; */
+    gap:50px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.firstBoxContainer{
+    width:80%;
+    height:50vh;
+    /* justify-content: center; */
+    gap:40px;
+}
+
+.secondBoxContainer{
+    width:80%;
+
+    /* background-color: yellow; */
+    gap:40px;
+}
+
+.firstBox1 , .secondBox1{
+    width:50%;
+    padding: 5px;
+    padding-top: 10px;
+    /* background-color: aquamarine; */
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgb(104, 104, 104);
+}
+
+.firstBox2 , .secondBox2{
+    width:100%;   
+    padding-top: 10px;
+    /* background-color: aquamarine; */
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgb(104, 104, 104);
+    margin-top: 30px;
+}
+
+.iconBoxes{
+    width:100px;
+    margin: 0px;
+}
+
+.iconBoxes img{
+    width:100%;
+    height: 100%;
+}
+
+.textBoxes-head{
+    padding:0 25px;
+    color:var(--color-head);
+}
+
+.subTextBoxes{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding:0px 25px;
+    color:var(--color-sub);
+    font-size: 14px;;
+}
+
+.linkBoxes{
+    color:var(--color-sub);
+    text-decoration: underline;
+    padding:0 25px;
+    margin-top: 15px;;
+}
+
+.firstBox2 .textBox{
+    width:50%;
+}
+
+.imgBox{
+    width:50%;
+}
+
+.imgBox img{
+    width:100%;
+}
+
+.secondBox2{
+    display:flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.secondBox2 h1{
+    width:60%;
+    font-size: 40px;
+    text-align: center;
+    color: var(--color-head);
+}
+
+.secondBox2 p{
+    width:60%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color:var(--color-sub);
+    font-size: 14px;
+}
+
+.secondBox2 .t-btn{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+/* ---------------------------------------- Footer ------------------------------------------- */
+
+footer{
+    background-image: radial-gradient( rgb(10,1,31) , rgb(20,12,50));
+    padding-bottom: 50px;
+}
+
+.logoContainer{
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer p{
+    color:var(--color-sub);
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.logoblock{
+    width:80%;
+    justify-content: space-around;
+}
+
+.logoblock img{
+    width:70px;
+    margin-bottom: 100px;
+}
+
+.subFooter{
+    width:100vw;
+    justify-content: space-around;
+    gap:20px;
+}
+
+.subFooter>div{
+    width:20%;
+    color:var(--color-head);
+    line-height: 20px;
+}
+
+.subFooter .third{
+    justify-content: end;
+    margin-bottom: 50px;
+}
+
+.subFooter p {
+    font-size: 14px;
+}
+
+
+.sub{
+    color:var(--color-sub);
+}
+
+.faint{
+    color: var(--color-faint);
+}
